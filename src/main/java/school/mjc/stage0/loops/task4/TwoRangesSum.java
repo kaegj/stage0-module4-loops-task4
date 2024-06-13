@@ -9,14 +9,14 @@ public class TwoRangesSum {
         } else {
             int skippedSum = 0, countedSum = 0;
             for (int i = 0; i < lastInRow; i++) {
-                if (i != numberToSkip) {
+                if (i == numberToSkip) {
                     countedSum += i;
                 } else {
                     skippedSum += i;
                 }
             }
-            System.out.println("skipped sum is" + skippedSum);
-            System.out.println("coutned sum is " + countedSum);
+            System.out.println("skipped sum is " + skippedSum);
+            System.out.println("counted sum is " + countedSum);
         }
     }
 }
